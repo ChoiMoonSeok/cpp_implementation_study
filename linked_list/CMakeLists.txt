@@ -1,0 +1,1 @@
+ADD_EXECUTABLE(a.out linked_list.h linked_list.cpp test.cpp)
