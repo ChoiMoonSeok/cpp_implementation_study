@@ -1,0 +1,1 @@
+ADD_EXECUTABLE(a.out BinaryTree.h BinaryTree.cpp test.cpp)
