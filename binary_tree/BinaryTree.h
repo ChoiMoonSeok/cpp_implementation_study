@@ -10,7 +10,8 @@ private:
     std::shared_ptr<TreeNode> Right;
 
 public:
-    TreeNode(int input_value) : value(input_value) {} // 생성자
+    TreeNode(int input_value) : value(input_value) {}             // 생성자
+    ~TreeNode() { std::cout << value << " delete" << std::endl; } // 삭제자
 
     int get_value();
     std::shared_ptr<TreeNode> get_left();
@@ -19,11 +20,11 @@ public:
     void set_right(std::shared_ptr<TreeNode> left);
 };
 
-// 이진탐색트리
 class BTree
 {
 private:
     std::shared_ptr<TreeNode> Root;
+    std::shared_ptr<TreeNode> remove(std::shared_ptr<TreeNode> node, int value);
 
 public:
     BTree() : Root(nullptr) {}
