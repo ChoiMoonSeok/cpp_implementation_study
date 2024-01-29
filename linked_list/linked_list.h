@@ -18,12 +18,11 @@ public:
     int get_value();
 };
 
-
 class EdgeNode
 {
 private:
-    LinkedNode* RightEdge;
-    LinkedNode* LeftEdge;
+    LinkedNode *RightEdge;
+    LinkedNode *LeftEdge;
 
 public:
     EdgeNode();
@@ -32,5 +31,7 @@ public:
     LinkedNode *pop_left();
     LinkedNode *pop_right();
     LinkedNode search(int value);
+    LinkedNode &get_RightEdge();
+    LinkedNode &get_LeftEdge();
     void remove(int value);
 };
