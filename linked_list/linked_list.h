@@ -27,6 +27,8 @@ private:
 
 public:
     EdgeNode();
+    void set_LeftEdge(LinkedNode *node);
+    void set_RightEdge(LinkedNode *node);
     void append_left(int value);
     void append_right(int value);
     LinkedNode *pop_left();
@@ -35,4 +37,6 @@ public:
     LinkedNode &get_RightEdge();
     LinkedNode &get_LeftEdge();
     void remove(int value);
+
+
 };

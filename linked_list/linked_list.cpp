@@ -27,6 +27,8 @@ private:
 
 public:
     EdgeNode();
+    void set_LeftEdge(LinkedNode *node);
+    void set_RightEdge(LinkedNode *node);
     void append_left(int value);
     void append_right(int value);
     LinkedNode *pop_left();
@@ -126,6 +128,16 @@ EdgeNode::EdgeNode()
     RightEdge = nullptr;
     LeftEdge = nullptr;
 };
+
+void EdgeNode::set_LeftEdge(LinkedNode *node)
+{
+    LeftEdge = node;
+}
+
+void EdgeNode::set_RightEdge(LinkedNode *node)
+{
+    RightEdge = node;
+}
 
 void EdgeNode::append_left(int input_value)
 {
