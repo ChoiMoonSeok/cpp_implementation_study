@@ -7,3 +7,6 @@
 
 ## binary_tree
 - 이진탐색트리 구현체
+
+## QuickSort
+- 상기의 양방향 링크드리스트에 대한 quick sort 구현
