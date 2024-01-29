@@ -16,6 +16,7 @@ public:
     LinkedNode *get_left();
     LinkedNode *get_right();
     int get_value();
+    void set_value(int val);
 };
 
 class EdgeNode
