@@ -1,0 +1,1 @@
+add_executable(a.out merge_sort.cpp)
